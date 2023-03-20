@@ -7,6 +7,7 @@ library(Rgraphviz)
 library(sna)
 library(network)
 
+
 adjacency = read.csv("./skill_matrix2.csv")
 rownames(adjacency) = adjacency$X
 adjacency$X = NULL
@@ -38,3 +39,9 @@ net = make_network_obj(adjacency, labels)
 plt = make_plot(net)
 
 ggsave("./skillnet.png", plot=plt,limitsize=FALSE,dpi=400, units="cm",width=40,height=40)
+
+
+# arrow workaround https://github.com/plotly/plotly.R/issues/469 use plot_ly directly?
+pltl = plotly::ggplotly(plt)
+pltl
+htmlwidgets::saveWidget(pltl,file="skillnet.html")
