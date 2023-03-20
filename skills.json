@@ -1,0 +1,11 @@
+{
+    "handstand": ["planche", "handspring"], 
+    "frontsupport": ["handstand", "planche"], 
+    "frontflip": [], 
+    "handspring": ["frontflip"], 
+    "hang": ["pullup"], 
+    "pullup": ["circleup", "skinthecat"], 
+    "skinthecat": ["circleup"],
+    "planche":[],
+    "circleup":[]
+}

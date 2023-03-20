@@ -1,0 +1,10 @@
+,handstand,frontsupport,frontflip,handspring,hang,pullup,skinthecat,planche,circleup
+handstand,0,0,0,1,0,0,0,1,0
+frontsupport,1,0,0,0,0,0,0,1,0
+frontflip,0,0,0,0,0,0,0,0,0
+handspring,0,0,1,0,0,0,0,0,0
+hang,0,0,0,0,0,1,0,0,0
+pullup,0,0,0,0,0,0,1,0,1
+skinthecat,0,0,0,0,0,0,0,0,1
+planche,0,0,0,0,0,0,0,0,0
+circleup,0,0,0,0,0,0,0,0,0
