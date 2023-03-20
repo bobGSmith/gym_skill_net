@@ -7,7 +7,7 @@ library(Rgraphviz)
 library(sna)
 library(network)
 
-adjacency = read.csv("./skill_matrix.csv")
+adjacency = read.csv("./skill_matrix2.csv")
 rownames(adjacency) = adjacency$X
 adjacency$X = NULL
 
@@ -37,4 +37,4 @@ net = make_network_obj(adjacency, labels)
 
 plt = make_plot(net)
 
-ggsave("./skillnet.png", plot=plt,limitsize=FALSE,dpi=100, units="cm",width=20,height=20)
+ggsave("./skillnet.png", plot=plt,limitsize=FALSE,dpi=400, units="cm",width=40,height=40)
